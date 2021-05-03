@@ -1,7 +1,5 @@
 package cst438;
 
-
-
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -47,14 +45,16 @@ public class Movie {
 		this.title =  title;
 		this.rating = rating;
 		this.name = name;
-		this.date = date;
-		
-		
-		
+		this.date = date;		
 	}
 	
-	public long getId() { return id; }
-	public void setId(long id) { this.id = id;}
+	public long getId() { 
+		return id; 
+		}
+	
+	public void setId(long id) { 
+		this.id = id;
+		}
 
 	public String getTitle() {
 		return title;

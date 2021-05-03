@@ -28,7 +28,6 @@ public class MovieRating {
 	public String processMovieForm(@Valid Movie movie,
 			BindingResult result,
 			Model model) {
-		//model.addAttribute("time", new java.util.Date().toString());
 		if(result.hasErrors()) {
 			return "movie_form";
 		}
@@ -38,7 +37,7 @@ public class MovieRating {
 	@GetMapping("/movie")
 	public String getAllMovies(Model model) {
 		List<Movie> movie_list = movieRepository.findAllMoviesOrderByTitleDateDesc();
-		model.addAttribute("film", movie_list);
+		model.addAttribute("movie", movie_list);
 		return "movie_list";
 	}
 	
