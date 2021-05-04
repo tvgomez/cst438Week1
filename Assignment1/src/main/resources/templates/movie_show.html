@@ -5,10 +5,13 @@
 </head>
 <body>
 	<h2 th:inline="text">Hello</h2>
+	<h3>Updated Library!:</h3>
 	
-	Title: <span th:inline="text"> [[${movie.title}]] </span> <br />
-	Rating: <span th:inline="text"> [[${movie.rating}]] </span> <br /> 
-	Name: <span th:inline="text"> [[${movie.name}]] </span> <br />
+	Title: <span th:inline="text"> [[${movie.title}]]</span><br />
+	Rating: <span th:inline="text"> [[${movie.rating}]]</span><br /> 
+	Name: <span th:inline="text"> [[${movie.name}]]</span><br />
+	<a href="/movie/new">Add a new movie</a>
+	<a href="/movie">Back to the List</a>
 	
 </body>
 </html>
